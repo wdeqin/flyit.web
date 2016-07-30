@@ -1,3 +1,5 @@
+package com.github.wdeqin.flyit.web;
+
 import org.junit.Test;
 import static org.junit.Assert.*;
 
