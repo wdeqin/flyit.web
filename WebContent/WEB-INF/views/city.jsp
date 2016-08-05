@@ -7,6 +7,6 @@
 <title>Hello</title>
 </head>
 <body>
-	<p>Hello, ${name}!</p>
+	<p>${id}  ${name}  ${district}  ${countryCode}  ${population}</p>
 </body>
 </html>
