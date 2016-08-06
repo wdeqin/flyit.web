@@ -41,6 +41,8 @@ dependencies {
   	
   	compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.39'
   	
+  	compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.6.3'
+  	
 }
 
 sourceSets {
