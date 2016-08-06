@@ -1,4 +1,4 @@
-package com.github.wdeqin.flyit.web.expriment;
+package com.github.wdeqin.flyit.web.experiment;
 
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -18,7 +18,6 @@ import com.github.wdeqin.flyit.data.model.City;
 
 @Controller
 public class CityController {
-
 	private static Logger logger;
 	private static SqlSessionFactory factory;
 
@@ -28,7 +27,7 @@ public class CityController {
 	}
 
 	@RequestMapping("/city")
-	public String hello(@RequestParam(value = "id", required = true) int id, Model model) {
+	public String getCity(@RequestParam(value = "id", required = true) int id, Model model) {
 		SqlSession session = factory.openSession();
 		CityMapper cityMapper = session.getMapper(CityMapper.class);
 		
@@ -37,7 +36,7 @@ public class CityController {
 		if (city == null) {
 			logger.error("no city for id: " + id);
 		}
-
+		
 		model.addAttribute("id", city.getId());
 		model.addAttribute("name", city.getName());
 		model.addAttribute("district", city.getDistrict());
@@ -49,7 +48,7 @@ public class CityController {
 
 	@RequestMapping("/city_")
 	@ResponseBody
-	public String getString(@RequestParam(value = "id", required = true) int id, Model model) {
+	public String getCity_(@RequestParam(value = "id", required = true) int id, Model model) {
 		SqlSession session = factory.openSession();
 		CityMapper cityMapper = session.getMapper(CityMapper.class);
 		
@@ -64,6 +63,7 @@ public class CityController {
 			logger.error(e);
 		}
 		return jsonCity;
+		
 	}
 
 }

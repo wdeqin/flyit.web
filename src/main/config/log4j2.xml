@@ -6,10 +6,10 @@
 		</Console>
 	</Appenders>
 	<Loggers>
-		<Logger name="com.flyit.web" level="trace" additivity="false">
+		<Logger name="com.flyit.web" level="debug" additivity="false">
 			<AppenderRef ref="Console" />
 		</Logger>
-		<Root level="error">
+		<Root level="debug">
 			<AppenderRef ref="Console" />
 		</Root>
 	</Loggers>
