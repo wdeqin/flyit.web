@@ -23,7 +23,6 @@ public class CityBean implements RmiHandler {
 
 	@Transactional("transactionManager")
 	public String handle(RmiPack pack) {
-
 		try {
 			logger.debug(pack);
 			Integer id = (Integer) pack.getInput().get("id");

@@ -27,9 +27,11 @@ repositories {
 // In this section you declare the dependencies for your production and test code
 dependencies {
 	compile group: 'org.springframework', name: 'spring-core', version: '4.3.2.RELEASE'
+	compile group: 'org.springframework', name: 'spring-aop', version: '4.3.2.RELEASE'
 	compile group: 'org.springframework', name: 'spring-webmvc', version: '4.3.2.RELEASE'
 	compile group: 'org.springframework', name: 'spring-web', version: '4.3.2.RELEASE'
 	compile group: 'org.springframework', name: 'spring-jdbc', version: '4.3.2.RELEASE'
+	compile group: 'org.springframework', name: 'spring-tx', version: '4.3.2.RELEASE'
 	
 	compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.6.2'
   	compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.6.2'

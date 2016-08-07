@@ -4,6 +4,7 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/config"/>
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
         <property name="context-root" value="flyit.web"/>
         <property name="java-output-path" value="/flyit.web/bin"/>
     </wb-module>

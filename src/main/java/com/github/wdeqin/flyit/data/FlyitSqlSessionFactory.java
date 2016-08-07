@@ -11,9 +11,9 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.apache.logging.log4j.LogManager;
 
 public class FlyitSqlSessionFactory implements ServletContextListener {
-	
+
 	private static SqlSessionFactory factory;
-	
+
 	@Override
 	public void contextDestroyed(ServletContextEvent event) {
 	}
@@ -26,7 +26,7 @@ public class FlyitSqlSessionFactory implements ServletContextListener {
 			LogManager.getRootLogger().fatal(e);
 		}
 	}
-	
+
 	public static SqlSessionFactory getFactory() {
 		return factory;
 	}

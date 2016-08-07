@@ -14,7 +14,6 @@
 		<setting name="logImpl" value="LOG4J2"/>
 	</settings>
 	
-	<!-- 
 	<environments default="development">
 		<environment id="development">
 			<transactionManager type="JDBC"></transactionManager>
@@ -28,6 +27,5 @@
 			</dataSource>
 		</environment>
 	</environments> 
-	-->
 	
 </configuration>
