@@ -36,5 +36,11 @@
 			enableDeleteByPrimaryKey="true" enableDeleteByExample="false"
 			enableCountByExample="false" enableUpdateByExample="false" modelType="flat" />
 
+		<table schema="world" tableName="dev_seq_t" domainObjectName="Seq"
+			enableInsert="false" enableSelectByPrimaryKey="true"
+			enableSelectByExample="false" enableUpdateByPrimaryKey="true"
+			enableDeleteByPrimaryKey="false" enableDeleteByExample="false"
+			enableCountByExample="false" enableUpdateByExample="false" modelType="flat" />
+
 	</context>
 </generatorConfiguration>

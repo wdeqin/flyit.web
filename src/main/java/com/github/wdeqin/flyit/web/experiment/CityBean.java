@@ -27,8 +27,6 @@ public class CityBean implements RmiHandler {
 			logger.debug(pack);
 			Integer id = (Integer) pack.getInput().get("id");
 			City c = cityMapper.selectByPrimaryKey(id);
-			cityMapper.updateByPrimaryKeySelective(c);
-			cityMapper.updateByPrimaryKeySelective(c);
 			ObjectMapper om = new ObjectMapper();
 			return om.writeValueAsString(c);
 		} catch (JsonProcessingException e) {

@@ -32,7 +32,7 @@
 	</bean>
 
 	<tx:annotation-driven transaction-manager="transactionManager" />
-	
+
 	<bean id="dataSourceEx"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
@@ -60,8 +60,17 @@
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
 	</bean>
 
+	<bean id="seqMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+		<property name="mapperInterface" value="com.github.wdeqin.flyit.data.dao.SeqMapper" />
+		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
+	</bean>
+
 	<bean id="cityBean" class="com.github.wdeqin.flyit.web.experiment.CityBean">
 		<property name="cityMapper" ref="cityMapper" />
+	</bean>
+
+	<bean id="seqBean" class="com.github.wdeqin.flyit.web.experiment.SeqBean">
+		<property name="seqMapper" ref="seqMapper" />
 	</bean>
 
 </beans>
